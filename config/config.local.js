@@ -17,25 +17,14 @@ module.exports = appInfo => {
 
   // add your middleware config here
   config.middleware = [
-    'robot',
+
   ];
 
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
-    view: {
-      defaultViewEngine: 'nunjucks',
-      mapping: {
-        '.tpl': 'nunjucks',
-      },
-    },
-    news: {
-      pageSize: 5,
-      serverUrl: 'https://hacker-news.firebaseio.com/v0',
-    },
     robot: {
       ua: [
-        /curl/i,
         /Baiduspider/i,
       ],
     },
